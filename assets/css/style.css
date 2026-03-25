@@ -156,16 +156,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
    ========================================= */
 .hero {
   min-height: 100vh;
-  padding-top: var(--nav-h);
+  padding: var(--nav-h) 40px 60px;
   background: var(--white);
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 80px;
+  justify-content: space-between;
 }
 
 /* Purple glow blob */
@@ -205,7 +202,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   max-width: var(--max-w);
   margin: 0 auto;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 48px;
 }
 
 .hero__title {
@@ -1340,6 +1337,50 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .client-row:hover .client-row__arrow { opacity: 1; transform: none; }
+
+/* =========================================
+   LOGO GRID
+   ========================================= */
+.logo-grid-section {
+  padding: 80px 40px 120px;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.logo-grid-section__inner { max-width: var(--max-w); margin: 0 auto; }
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  margin-top: 64px;
+}
+
+.logo-cell {
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  aspect-ratio: 2.2/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  transition: background 0.25s;
+}
+
+.logo-cell:hover { background: var(--off-white); }
+
+.logo-cell img {
+  max-width: 130px;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.45);
+  transition: filter 0.25s;
+}
+
+.logo-cell:hover img { filter: grayscale(1) opacity(0.8); }
 
 /* =========================================
    PORTFOLIO PAGE
