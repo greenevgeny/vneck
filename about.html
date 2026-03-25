@@ -10,159 +10,59 @@
 
   <nav class="nav">
     <a href="index.html" class="nav__logo">Vneck Bros</a>
-    <div class="nav__right">
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Work</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <a href="#contact" class="nav__contact">
-        Contact Us
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 9L9 1M9 1H3M9 1v6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Work</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="about-hero">
-    <div class="about-hero__glow"></div>
-    <div class="about-hero__inner">
-      <p class="section-label fade-up">About Us</p>
-      <h1 class="about-hero__title fade-up">
-        Two minds.<br>
-        One <span class="accent">obsession.</span><br>
-        <span class="light">Zero compromise.</span>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <p class="sec-label fade-up">About Us</p>
+      <h1 class="page-hero__title fade-up">
+        We're<br>
+        <span class="thin">Vneck Bros.</span>
       </h1>
+      <p class="page-hero__sub fade-up">A creative duo making brands impossible to ignore.</p>
     </div>
-  </section>
-
-  <!-- STORY -->
-  <section class="about-story-section">
-    <div class="about-story-section__inner">
-      <div class="about-sticky">
-        <p class="about-label fade-up">Our Story</p>
-        <h2 class="about-big-text fade-up">
-          We don't follow trends.<br>
-          <span class="light">We create markets.</span>
-        </h2>
-        <div style="width:40px;height:2px;background:var(--accent);margin-top:32px;" class="fade-up"></div>
-      </div>
-      <div class="about-body fade-up">
-        <p>We are Dante Valentino and Jay Green — two creative forces united by a shared obsession: making brands unforgettable.</p>
-        <p>With decades of combined experience across <strong>design, photography, videography, fashion, tech, and brand consulting</strong>, we don't just follow trends. We create markets where none existed.</p>
-        <p>Our backgrounds include work with global giants like <strong>Google, NBC, SyFy, PepsiCo, Ducati, and DJI</strong>. But our strength isn't just in our résumés. It's in our vision.</p>
-        <p>At our core, we are creative consultants who specialize in building brands that feel alive. Whether we're crafting visual stories, directing campaign strategy, or developing a magnetic social presence, we bring relentless originality, cinematic aesthetics, and sharp business instincts to every project.</p>
-        <p>We know how to move fast, think boldly, and execute with precision. Together, we don't just make things look good. <strong>We make them work.</strong></p>
-        <p>Our mission is simple: to help creators, companies, and dreamers stand out — loud, proud, and unforgettable.</p>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <!-- TEAM -->
   <section class="team-section">
     <div class="team-section__inner">
-      <div class="team-section__header">
-        <p class="section-label fade-up">The Team</p>
-        <h2 class="section-title fade-up">
-          The people behind<br>
-          <span class="light">the work.</span>
-        </h2>
-      </div>
-      <div class="team-grid stagger">
 
-        <div class="team-card">
-          <div class="team-card__num">01</div>
-          <div class="team-card__role">Co-Founder</div>
-          <h3 class="team-card__name">
-            Dante<br>
-            <span class="light">Valentino</span>
-          </h3>
-          <p class="team-card__bio">Dante brings emotional intelligence, narrative strategy, and the ability to translate abstract ideas into vivid, seductive design. A storyteller at heart — he architects campaigns that don't just communicate. They resonate.</p>
-          <div class="team-card__tags">
-            <span class="tag">Narrative Strategy</span>
-            <span class="tag">Brand Consulting</span>
-            <span class="tag">Creative Direction</span>
-            <span class="tag">Cinematography</span>
-            <span class="tag">Design</span>
+      <div class="team-intro fade-up">
+        <p class="team-intro__text">
+          <strong>Dante Valentino and Jay Green</strong> are creative directors, brand strategists, and filmmakers based in Austin, TX. Together as Vneck Bros, they combine cinematic storytelling with strategic brand thinking to produce work that doesn't just look good — it moves people and drives results.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-member fade-up">
+          <div class="team-member__photo">
+            <!-- Replace src with actual photo path when available -->
+            <img src="assets/images/dante.jpg" alt="Dante Valentino" onerror="this.style.display='none'">
           </div>
+          <div class="team-member__name">Dante Valentino</div>
+          <div class="team-member__role">Creative Director &amp; Director of Photography</div>
+          <p class="team-member__bio">Dante leads visual strategy and direction. With a background in cinematography and brand campaigns, he brings an uncompromising eye for image-making to every project — from concept through final cut.</p>
         </div>
 
-        <div class="team-card">
-          <div class="team-card__num">02</div>
-          <div class="team-card__role">Co-Founder</div>
-          <h3 class="team-card__name">
-            Jay<br>
-            <span class="light">Green</span>
-          </h3>
-          <p class="team-card__bio">Jay brings unmatched speed, fashion instinct, and visual intensity. A force of execution — he turns concepts into culture at breakneck pace, with an eye for what the audience hasn't seen yet, but immediately wants.</p>
-          <div class="team-card__tags">
-            <span class="tag">Visual Strategy</span>
-            <span class="tag">Fashion &amp; Style</span>
-            <span class="tag">Video Production</span>
-            <span class="tag">Social Media</span>
-            <span class="tag">Brand Marketing</span>
+        <div class="team-member fade-up">
+          <div class="team-member__photo">
+            <!-- Replace src with actual photo path when available -->
+            <img src="assets/images/jay.jpg" alt="Jay Green" onerror="this.style.display='none'">
           </div>
+          <div class="team-member__name">Jay Green</div>
+          <div class="team-member__role">Creative Director &amp; Brand Strategist</div>
+          <p class="team-member__bio">Jay drives the strategic side of every engagement — turning brand goals into creative frameworks that guide production. His approach bridges the gap between compelling story and measurable impact.</p>
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="services" style="padding-top:80px;padding-bottom:80px;">
-    <div class="services__inner">
-      <div class="services__header">
-        <p class="section-label fade-up">How We Work</p>
-        <h2 class="services__title fade-up">
-          Our approach to<br>
-          <span class="light">every project.</span>
-        </h2>
-      </div>
-      <div class="services__list stagger">
-        <div class="service-row">
-          <div class="service-row__left">
-            <div class="service-row__num">01</div>
-            <div>
-              <div class="service-row__name">Understand</div>
-              <div class="service-row__desc">We go deep — into your brand, your audience, and the emotional gap in the market only you can fill.</div>
-            </div>
-          </div>
-        </div>
-        <div class="service-row">
-          <div class="service-row__left">
-            <div class="service-row__num">02</div>
-            <div>
-              <div class="service-row__name">Create</div>
-              <div class="service-row__desc">We build with cinematic precision, visual boldness, and creative instincts sharpened across two decades of global work.</div>
-            </div>
-          </div>
-        </div>
-        <div class="service-row">
-          <div class="service-row__left">
-            <div class="service-row__num">03</div>
-            <div>
-              <div class="service-row__name">Elevate</div>
-              <div class="service-row__desc">We don't hand off and disappear. We refine, push harder, and make sure the work doesn't just land — it lingers.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT CTA -->
-  <section class="cta" id="contact">
-    <div class="cta__inner">
-      <h2 class="cta__title fade-up">
-        Let's build something<br>
-        <span class="light">no one has seen before.</span>
-      </h2>
-      <p class="cta__sub fade-up">We're selective about who we work with — because that's how we stay great.</p>
-      <a href="mailto:dantevalentino.tv@gmail.com" class="btn btn-dark fade-up">
-        Send a Message
-        <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5h10M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
     </div>
   </section>
 
@@ -171,11 +71,11 @@
     <div class="footer__inner">
       <div class="footer__top">
         <div>
-          <div style="font-family:var(--font);font-size:14px;font-weight:600;color:#fff;margin-bottom:8px;">Vneck Bros</div>
-          <p class="footer__tagline">Creative direction. Cinematic storytelling.<br>Brands built to be unforgettable.</p>
+          <div class="footer__brand">Vneck Bros</div>
+          <p class="footer__tagline">Creative direction. Cinematic storytelling. Brands built to be unforgettable.</p>
         </div>
-        <div style="display:flex;gap:64px;">
-          <div class="footer__nav-group">
+        <div class="footer__cols">
+          <div class="footer__col">
             <h4>Navigate</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -184,20 +84,16 @@
               <li><a href="about.html">About</a></li>
             </ul>
           </div>
-          <div class="footer__nav-group">
+          <div class="footer__col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="#contact">Get in Touch</a></li>
+              <li><a href="mailto:dantevalentino.tv@gmail.com">Email Us</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom-bar">
+      <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 Vneck Bros. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-        </div>
       </div>
     </div>
     <div class="footer__wordmark">VNECK</div>

@@ -10,181 +10,136 @@
 
   <nav class="nav">
     <a href="index.html" class="nav__logo">Vneck Bros</a>
-    <div class="nav__right">
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Work</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <a href="about.html#contact" class="nav__contact">
-        Contact Us
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 9L9 1M9 1H3M9 1v6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Work</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="portfolio-hero">
-    <div class="portfolio-hero__inner">
-      <p class="section-label fade-up">Selected Work</p>
-      <h1 class="portfolio-hero__title fade-up">
-        Stories that move<br>
-        <span class="light">people &amp; markets.</span>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <p class="sec-label fade-up">Selected Work</p>
+      <h1 class="page-hero__title fade-up">
+        Stories that<br>
+        <span class="thin">move people.</span>
       </h1>
+      <p class="page-hero__sub fade-up">Campaigns, brand films, and creative direction for clients around the world.</p>
     </div>
-  </section>
+  </div>
 
-  <!-- PORTFOLIO GRID (dark) -->
+  <!-- PORTFOLIO GRID -->
   <section class="portfolio-section">
     <div class="portfolio-section__inner">
-      <div class="portfolio-full-grid stagger">
+      <div class="port-grid">
 
-        <!-- Wide -->
-        <div class="pfull-card pfull-card--wide"
-             data-video-id="F3RugNt7uzo"
-             data-title="The Future of Possible"
-             data-client="DJI">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/F3RugNt7uzo/maxresdefault.jpg" alt="DJI" loading="lazy">
+        <div class="vcard" data-video-id="F3RugNt7uzo" data-title="The Future of Possible" data-client="DJI">
+          <img src="https://img.youtube.com/vi/F3RugNt7uzo/maxresdefault.jpg" alt="DJI" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">DJI</div>
-            <div class="pfull-card__title">The Future of Possible</div>
+          <div class="vcard__info">
+            <div class="vcard__client">DJI</div>
+            <div class="vcard__title">The Future of Possible</div>
           </div>
         </div>
 
-        <!-- Regular -->
-        <div class="pfull-card"
-             data-video-id="HPTzClHEFZc"
-             data-title="X Games"
-             data-client="TAJCH">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/HPTzClHEFZc/maxresdefault.jpg" alt="X Games" loading="lazy">
+        <div class="vcard" data-video-id="HPTzClHEFZc" data-title="X Games" data-client="X Games">
+          <img src="https://img.youtube.com/vi/HPTzClHEFZc/maxresdefault.jpg" alt="X Games" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">TAJCH</div>
-            <div class="pfull-card__title">X Games</div>
+          <div class="vcard__info">
+            <div class="vcard__client">X Games</div>
+            <div class="vcard__title">X Games</div>
           </div>
         </div>
 
-        <div class="pfull-card"
-             data-video-id="FllWOGpF6s0"
-             data-title="Brand Film"
-             data-client="Tesla Suit">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/FllWOGpF6s0/maxresdefault.jpg" alt="Tesla Suit" loading="lazy">
+        <div class="vcard" data-video-id="FllWOGpF6s0" data-title="Brand Film" data-client="Teslasuit">
+          <img src="https://img.youtube.com/vi/FllWOGpF6s0/maxresdefault.jpg" alt="Teslasuit" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">Tesla Suit</div>
-            <div class="pfull-card__title">Brand Film</div>
+          <div class="vcard__info">
+            <div class="vcard__client">Teslasuit</div>
+            <div class="vcard__title">Brand Film</div>
           </div>
         </div>
 
-        <div class="pfull-card"
-             data-video-id="U8KdZz7D7ss"
-             data-title="Brand Story"
-             data-client="Flow Genome Project">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/U8KdZz7D7ss/maxresdefault.jpg" alt="Flow Genome Project" loading="lazy">
+        <div class="vcard" data-video-id="U8KdZz7D7ss" data-title="Brand Story" data-client="Flow Genome Project">
+          <img src="https://img.youtube.com/vi/U8KdZz7D7ss/maxresdefault.jpg" alt="Flow Genome Project" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">Flow Genome Project</div>
-            <div class="pfull-card__title">Brand Story</div>
+          <div class="vcard__info">
+            <div class="vcard__client">Flow Genome Project</div>
+            <div class="vcard__title">Brand Story</div>
           </div>
         </div>
 
-        <!-- Wide -->
-        <div class="pfull-card pfull-card--wide"
-             data-video-id="M1_N49BxUBM"
-             data-title="Sizzle Reel"
-             data-client="Dealerware">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/M1_N49BxUBM/maxresdefault.jpg" alt="Dealerware" loading="lazy">
+        <div class="vcard" data-video-id="M1_N49BxUBM" data-title="Sizzle Reel" data-client="Dealerware">
+          <img src="https://img.youtube.com/vi/M1_N49BxUBM/maxresdefault.jpg" alt="Dealerware" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">Dealerware</div>
-            <div class="pfull-card__title">Sizzle Reel</div>
+          <div class="vcard__info">
+            <div class="vcard__client">Dealerware</div>
+            <div class="vcard__title">Sizzle Reel</div>
           </div>
         </div>
 
-        <div class="pfull-card"
-             data-video-id="JA8Fkfn2A6c"
-             data-title="Product Film"
-             data-client="Light Pump">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/JA8Fkfn2A6c/maxresdefault.jpg" alt="Light Pump" loading="lazy">
+        <div class="vcard" data-video-id="JA8Fkfn2A6c" data-title="Product Film" data-client="Light Pump">
+          <img src="https://img.youtube.com/vi/JA8Fkfn2A6c/maxresdefault.jpg" alt="Light Pump" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">Light Pump</div>
-            <div class="pfull-card__title">Product Film</div>
+          <div class="vcard__info">
+            <div class="vcard__client">Light Pump</div>
+            <div class="vcard__title">Product Film</div>
           </div>
         </div>
 
-        <div class="pfull-card"
-             data-video-id="AiTJDPgz6IY"
-             data-title="Recruiting Campaign"
-             data-client="Dealerware / TAJCH">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/AiTJDPgz6IY/maxresdefault.jpg" alt="Dealerware Recruiting" loading="lazy">
+        <div class="vcard" data-video-id="AiTJDPgz6IY" data-title="Recruiting Campaign" data-client="Dealerware">
+          <img src="https://img.youtube.com/vi/AiTJDPgz6IY/maxresdefault.jpg" alt="Dealerware Recruiting" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">Dealerware / TAJCH</div>
-            <div class="pfull-card__title">Recruiting Campaign</div>
+          <div class="vcard__info">
+            <div class="vcard__client">Dealerware</div>
+            <div class="vcard__title">Recruiting Campaign</div>
           </div>
         </div>
 
-        <!-- Wide -->
-        <div class="pfull-card pfull-card--wide"
-             data-video-id="Fa4BotfMpbc"
-             data-title="DJI × Lumix GH2"
-             data-client="DJI">
-          <div class="pfull-card__thumb">
-            <img src="https://img.youtube.com/vi/Fa4BotfMpbc/maxresdefault.jpg" alt="DJI Lumix" loading="lazy">
+        <div class="vcard" data-video-id="Fa4BotfMpbc" data-title="DJI × Lumix GH2" data-client="DJI">
+          <img src="https://img.youtube.com/vi/Fa4BotfMpbc/maxresdefault.jpg" alt="DJI Lumix" loading="lazy">
+          <div class="vcard__overlay">
+            <div class="vcard__play-btn">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6-10 6V1z"/></svg>
+            </div>
           </div>
-          <div class="pfull-card__play">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="white"><path d="M1 1l12 7-12 7V1z"/></svg>
-          </div>
-          <div class="pfull-card__info">
-            <div class="pfull-card__client">DJI</div>
-            <div class="pfull-card__title">DJI × Lumix GH2</div>
+          <div class="vcard__info">
+            <div class="vcard__client">DJI</div>
+            <div class="vcard__title">DJI × Lumix GH2</div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="cta__inner">
-      <h2 class="cta__title fade-up">
-        Your brand could be<br>
-        <span class="light">on this page.</span>
-      </h2>
-      <p class="cta__sub fade-up">We're selective, intentional, and all-in on every project we take.</p>
-      <a href="about.html#contact" class="btn btn-dark fade-up">Let's Talk</a>
     </div>
   </section>
 
@@ -193,11 +148,11 @@
     <div class="footer__inner">
       <div class="footer__top">
         <div>
-          <div style="font-family:var(--font);font-size:14px;font-weight:600;color:#fff;margin-bottom:8px;">Vneck Bros</div>
-          <p class="footer__tagline">Creative direction. Cinematic storytelling.<br>Brands built to be unforgettable.</p>
+          <div class="footer__brand">Vneck Bros</div>
+          <p class="footer__tagline">Creative direction. Cinematic storytelling. Brands built to be unforgettable.</p>
         </div>
-        <div style="display:flex;gap:64px;">
-          <div class="footer__nav-group">
+        <div class="footer__cols">
+          <div class="footer__col">
             <h4>Navigate</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -206,20 +161,16 @@
               <li><a href="about.html">About</a></li>
             </ul>
           </div>
-          <div class="footer__nav-group">
+          <div class="footer__col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="about.html#contact">Get in Touch</a></li>
+              <li><a href="mailto:dantevalentino.tv@gmail.com">Email Us</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom-bar">
+      <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 Vneck Bros. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-        </div>
       </div>
     </div>
     <div class="footer__wordmark">VNECK</div>
@@ -229,7 +180,7 @@
   <div class="modal-overlay" id="videoModal">
     <div class="modal">
       <button class="modal__close" id="modalClose">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
       <div class="modal__video">
         <iframe id="modalIframe" allowfullscreen allow="autoplay; fullscreen"></iframe>

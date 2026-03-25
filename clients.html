@@ -10,51 +10,40 @@
 
   <nav class="nav">
     <a href="index.html" class="nav__logo">Vneck Bros</a>
-    <div class="nav__right">
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Work</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <a href="about.html#contact" class="nav__contact">
-        Contact Us
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 9L9 1M9 1H3M9 1v6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Work</a></li>
+      <li><a href="clients.html" class="active">Clients</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="clients-hero">
-    <div class="about-hero__glow"></div>
-    <div style="max-width:var(--max-w);margin:0 auto;width:100%;position:relative;z-index:1;">
-      <p class="section-label fade-up">Clients</p>
-      <h1 class="clients-hero__title fade-up">
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <p class="sec-label fade-up">Clients</p>
+      <h1 class="page-hero__title fade-up">
         Some companies &amp;<br>
-        <span class="light">places who trust us.</span>
+        <span class="thin">places who trust us.</span>
       </h1>
     </div>
-  </section>
+  </div>
 
   <!-- LOGO GRID -->
-  <section class="logo-grid-section">
-    <div class="logo-grid-section__inner">
-      <p class="section-label fade-up">Our Clients</p>
-
-      <div class="logo-grid stagger">
+  <section class="logo-section">
+    <div class="logo-section__inner">
+      <p class="sec-label fade-up">Our Clients</p>
+      <div class="logo-grid">
 
         <div class="logo-cell">
           <img src="assets/images/logos/google.jpg" alt="Google">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/youtube.jpg" alt="YouTube">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/cota.svg" alt="Circuit of the Americas">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/ducati.svg" alt="Ducati">
         </div>
@@ -62,15 +51,12 @@
         <div class="logo-cell">
           <img src="assets/images/logos/dealerware.svg" alt="Dealerware">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/dji.jpg" alt="DJI">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/teslasuit.svg" alt="Teslasuit">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/xgames.svg" alt="X Games">
         </div>
@@ -78,15 +64,12 @@
         <div class="logo-cell">
           <img src="assets/images/logos/flowgenome.svg" alt="Flow Genome Project">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/nbc.svg" alt="NBC">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/nordstrom.svg" alt="Nordstrom">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/syfy.svg" alt="Syfy">
         </div>
@@ -94,15 +77,12 @@
         <div class="logo-cell">
           <img src="assets/images/logos/langham.svg" alt="The Langham">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/goldsgym.svg" alt="Gold's Gym">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/magic.svg" alt="Magic">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/pepsi.jpg" alt="Pepsi">
         </div>
@@ -110,15 +90,12 @@
         <div class="logo-cell">
           <img src="assets/images/logos/vanishing.svg" alt="Vanishing Inc.">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/ihg.jpg" alt="IHG">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/mitu.svg" alt="Mitú">
         </div>
-
         <div class="logo-cell">
           <img src="assets/images/logos/adler.svg" alt="Adler Planetarium">
         </div>
@@ -127,28 +104,16 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <div class="cta__inner">
-      <h2 class="cta__title fade-up">
-        Ready to join<br>
-        <span class="light">this list?</span>
-      </h2>
-      <p class="cta__sub fade-up">We're selective, intentional, and all-in on every project we take.</p>
-      <a href="about.html#contact" class="btn btn-dark fade-up">Start a Conversation</a>
-    </div>
-  </section>
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__top">
         <div>
-          <div style="font-family:var(--font);font-size:14px;font-weight:600;color:#fff;margin-bottom:8px;">Vneck Bros</div>
-          <p class="footer__tagline">Creative direction. Cinematic storytelling.<br>Brands built to be unforgettable.</p>
+          <div class="footer__brand">Vneck Bros</div>
+          <p class="footer__tagline">Creative direction. Cinematic storytelling. Brands built to be unforgettable.</p>
         </div>
-        <div style="display:flex;gap:64px;">
-          <div class="footer__nav-group">
+        <div class="footer__cols">
+          <div class="footer__col">
             <h4>Navigate</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -157,20 +122,16 @@
               <li><a href="about.html">About</a></li>
             </ul>
           </div>
-          <div class="footer__nav-group">
+          <div class="footer__col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="about.html#contact">Get in Touch</a></li>
+              <li><a href="mailto:dantevalentino.tv@gmail.com">Email Us</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom-bar">
+      <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 Vneck Bros. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-        </div>
       </div>
     </div>
     <div class="footer__wordmark">VNECK</div>
