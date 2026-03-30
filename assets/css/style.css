@@ -15,6 +15,7 @@
   --font: 'Space Grotesk', system-ui, sans-serif;
   --nav-h: 60px;
   --pad: 64px;
+  --max-w: 1600px;
 }
 
 /* RESET */
@@ -42,7 +43,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   height: var(--nav-h);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 var(--pad);
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
@@ -50,11 +51,26 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   transition: background 0.3s;
 }
 
+.nav__inner {
+  width: 100%;
+  max-width: var(--max-w);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.nav__mark {
+  flex-shrink: 0;
 }
 
 .nav__links {
@@ -82,21 +98,23 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   padding: calc(var(--nav-h) + 60px) var(--pad) 80px;
 }
 
-/* The purple radial glow */
+/* The purple radial glow — centered, full height */
 .hero__glow {
   position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 70%;
-  aspect-ratio: 1;
-  background: radial-gradient(ellipse at center,
-    rgba(139, 92, 246, 0.35) 0%,
-    rgba(167, 139, 250, 0.18) 35%,
-    rgba(196, 181, 253, 0.06) 65%,
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 100%;
+  background: radial-gradient(ellipse 70% 60% at 50% 40%,
+    rgba(139, 92, 246, 0.32) 0%,
+    rgba(167, 139, 250, 0.16) 40%,
+    rgba(196, 181, 253, 0.05) 70%,
     transparent 100%
   );
   pointer-events: none;
@@ -107,6 +125,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: var(--max-w);
 }
 
 .hero__eyebrow {
@@ -189,10 +208,13 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .about {
   padding: 100px var(--pad);
   border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
 }
 
 .about__inner {
   width: 100%;
+  max-width: var(--max-w);
 }
 
 .about__heading {
@@ -270,10 +292,13 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .work {
   background: var(--dark);
   padding: 100px var(--pad);
+  display: flex;
+  justify-content: center;
 }
 
 .work__inner {
   width: 100%;
+  max-width: var(--max-w);
 }
 
 .work__heading {
@@ -363,10 +388,13 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .clients {
   padding: 100px var(--pad);
   border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
 }
 
 .clients__inner {
   width: 100%;
+  max-width: var(--max-w);
 }
 
 .clients__heading {
@@ -388,22 +416,22 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 44px 36px;
+  padding: 52px 48px;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  min-height: 120px;
+  min-height: 160px;
 }
 
 .logo-cell img {
-  max-width: 130px;
-  max-height: 44px;
+  max-width: 200px;
+  max-height: 80px;
   width: auto;
   height: auto;
-  filter: grayscale(1) opacity(0.42);
+  filter: grayscale(1) opacity(0.5);
   transition: filter 0.25s;
 }
 
-.logo-cell:hover img { filter: grayscale(1) opacity(0.8); }
+.logo-cell:hover img { filter: grayscale(1) opacity(0.9); }
 
 /* ============================================
    FOOTER
@@ -419,6 +447,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .footer__inner {
   max-width: var(--max-w);
   margin: 0 auto;
+  width: 100%;
 }
 
 .footer__top {
@@ -582,7 +611,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 @media (max-width: 580px) {
   .team-grid { grid-template-columns: 1fr; }
   .logo-grid { grid-template-columns: repeat(2, 1fr); }
-  .logo-cell { padding: 28px 20px; min-height: 90px; }
-  .logo-cell img { max-width: 100px; max-height: 36px; }
+  .logo-cell { padding: 28px 20px; min-height: 100px; }
+  .logo-cell img { max-width: 120px; max-height: 52px; }
   .nav__links { display: none; }
 }
