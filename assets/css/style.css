@@ -13,9 +13,8 @@
   --dark: #0d0d0d;
   --accent: #7c3aed;
   --font: 'Space Grotesk', system-ui, sans-serif;
-  --max-w: 1200px;
   --nav-h: 60px;
-  --pad: 72px;
+  --pad: 64px;
 }
 
 /* RESET */
@@ -107,8 +106,6 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .hero__inner {
   position: relative;
   z-index: 1;
-  max-width: var(--max-w);
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -122,11 +119,10 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 
 .hero__title {
-  font-size: clamp(56px, 7vw, 112px);
+  font-size: clamp(56px, 7vw, 120px);
   font-weight: 700;
   line-height: 1.0;
   letter-spacing: -0.03em;
-  max-width: 800px;
 }
 
 .hero__sub {
@@ -134,7 +130,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   font-size: 17px;
   color: var(--muted);
   line-height: 1.7;
-  max-width: 480px;
+  max-width: 560px;
   font-weight: 400;
 }
 
@@ -196,8 +192,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 
 .about__inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
+  width: 100%;
 }
 
 .about__heading {
@@ -209,7 +204,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 
 .about__body {
-  max-width: 760px;
+  max-width: 900px;
   margin-bottom: 72px;
 }
 
@@ -278,8 +273,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 
 .work__inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
+  width: 100%;
 }
 
 .work__heading {
@@ -372,8 +366,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 
 .clients__inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
+  width: 100%;
 }
 
 .clients__heading {
