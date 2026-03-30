@@ -95,12 +95,12 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: calc(var(--nav-h) + 60px) var(--pad) 80px;
+  padding: calc(var(--nav-h) + 80px) var(--pad) 100px;
 }
 
 /* The purple radial glow — centered, full height */
@@ -408,24 +408,19 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--border);
-  border-left: 1px solid var(--border);
+  gap: 48px 32px;
 }
 
 .logo-cell {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 52px 48px;
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  min-height: 160px;
+  padding: 16px 0;
 }
 
 .logo-cell img {
-  max-width: 200px;
-  max-height: 80px;
-  width: auto;
+  width: 220px;
+  max-width: 100%;
   height: auto;
   filter: grayscale(1) opacity(0.5);
   transition: filter 0.25s;
@@ -611,7 +606,7 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 @media (max-width: 580px) {
   .team-grid { grid-template-columns: 1fr; }
   .logo-grid { grid-template-columns: repeat(2, 1fr); }
-  .logo-cell { padding: 28px 20px; min-height: 100px; }
-  .logo-cell img { max-width: 120px; max-height: 52px; }
+  .logo-cell { padding: 8px 0; }
+  .logo-cell img { width: 140px; }
   .nav__links { display: none; }
 }
